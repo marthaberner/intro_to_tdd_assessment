@@ -19,6 +19,12 @@ describe "PrimeNumber" do
 
     expect(true).to eq new_num.prime_number?(101)
   end
+  it "Detects that 102 is not a prime number" do
+    new_num = Prime.new
+
+
+    expect(false).to eq new_num.prime_number?(102)
+  end
 
 
 end
